@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+	<link href='assets/logo/anglelogo.ico' rel='icon' type='image/x-icon'/>
+	<title>安果科技有限公司</title>
+	<script type="text/javascript" src="bundle.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.messagestore.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="title">
+		<h1 data-i18n='ps'>產品與服務</h1>
+	</div>
+	<div class="sp_bg"></div>
+	<div class="service">
+		<div class="sp_content">
+			<div class="sp_info_img">
+				<img src="assets/product/product1.png">
+			</div>
+			<div class="sp_info">
+				<h4 data-i18n='product_p1'>主流电商接口</h4>
+				<p data-i18n='product_p1_p'>根據積累的各平台電商業務流程及傳統企業的特點為企業打造靈活、高效、智能、穩定的管理平台，提供電子商務行業整體信息化解決方案；電商接口對接各電商平台、包括amazon、ebay等國際電商平台，實現多平台、多店鋪統一管理；集中抓取對接平台所有電商訂單，智能的訂單處理流程、電商產品對應生成製造bom，直接生成內部ERP系統訂單數據</p>
+			</div>
+		</div>
+		<div class="sp_content">
+			<div class="sp_info">
+				<h4 data-i18n='product_p2'>移动门店管理APP</h4>
+				<p data-i18n='product_p2_p'>各渠道經銷商、門店統一使用導購APP系統操作，操作簡易，系統輕量，包含意向客戶到下單成交的銷售過程管理，同時可完整取得互聯網線上指定門店訂單需求；單據同樣經過中台智能拋轉ERP通過與企業線下ERP系統、財務系統集成實現線上線下、財務業務一體化管理，解決企業管理難題。</p>
+			</div>
+			<div class="sp_info_img">
+				<img src="assets/product/product2.png">
+			</div>
+		</div>
+		<div class="sp_content">
+			<div class="sp_info_img">
+				<img src="assets/product/product3.png">
+			</div>
+			<div class="sp_info">
+				<h4 data-i18n='product_p3'>ERP整合接口配置</h4>
+				<p data-i18n='product_p3_p'>邦企全渠道營銷平台提供中台全面功能，作為互聯網及企業內供應鏈的中間交換平台，整合各大電商及渠道APP的營銷流程，並提供對企業內網ERP的複雜商業邏輯雙向轉換及信息通知，極大提升企業營銷、電銷、經銷中心、跟單等重要銷售部門的服務及工作效率</p>
+			</div>
+		</div>
+		<div class="sp_content">
+			<div class="sp_info">
+				<h4 data-i18n='product_p4'>中台業務系統管理</h4>
+				<p data-i18n='product_p4_p'>透過配置管理及規則引擎，快速實現互聯網，經銷渠道，直營門店等全渠道需求轉換為企業供應鏈流程的雙向處理，例如：商品360度資料、訂單、收銀、庫存、出貨、物流、評價等</p>
+			</div>
+			<div class="sp_info_img">
+				<img src="assets/product/product4.png">
+			</div>
+		</div>
+	</div>
+	<div class="backtop"><button>^<br>top</button></div>
+	<div id="footer"></div>
+</body>
+<script>
+	$("#header").load("_nav.html", function () {
+			console.log("navbar.html OK.");
+	});
+	$("#footer").load("_footer.html", function () {
+		console.log("footer.html OK.");
+	});
+</script>
+<script>
+	// scroll內容切換
+	var img = $('.sp_content');
+		img.eq(0).css({opacity: 1});
+		img.eq(0).siblings().css({opacity: 0});
+
+	$(window).on('scroll', function () {
+		var scrollTrigger = $('.service').height(),
+			scrollTop = $(window).scrollTop(),
+			img = $('.sp_content');
+		if(scrollTop >= 0 ){
+			img.eq(0).css({opacity: 1});
+			img.eq(0).siblings().css({opacity: 0.1});
+		}
+
+		if(scrollTop >= (scrollTrigger*1/4-100) ){
+			img.eq(1).siblings().css({opacity: 0.1});
+			img.eq(1).css({opacity: 1});
+		}
+		if(scrollTop >= (scrollTrigger*2/4-100) ){
+			img.eq(2).css({opacity: 1});
+			img.eq(2).siblings().css({opacity: 0.1});
+		}
+		if(scrollTop >= (scrollTrigger*3/4-100) ){
+			img.eq(3).css({opacity: 1});
+			img.eq(3).siblings().css({opacity: 0.1});
+		}
+
+	});
+</script>
+<script>
+	// back-to-top 按鈕
+	var btn_bt= $('.backtop');
+	var top = $(window).height()
+	$(window).on('scroll', function () {
+		var scrollTrigger = $(window).height(),
+			scrollTop = $(window).scrollTop();
+			// console.log(scrollTop);
+		if (scrollTop > scrollTrigger) {
+			btn_bt.fadeIn(500);
+		} else {
+			btn_bt.fadeOut(500);
+		}
+	});
+	btn_bt.click(function(){
+		$('body,html').animate({scrollTop: 0}, 1500);
+	});
+</script>
+
+</html>

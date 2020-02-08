@@ -1,0 +1,150 @@
+<div class="nav">
+    <select class="language">
+            <option value="zh-cmn-Hant">繁體中文</option>
+            <option value="zh-cmn-Hans">简体中文</option>
+            <!-- <option value="en">English</option> -->
+    </select>
+    <button onclick="location.href='product_and_service.html'" data-i18n='ps'>產品與服務</button>
+    <button onclick="location.href='solutions.html'" data-i18n='solutions'>解決方案</button>
+    <button onclick="location.href='about.html'" data-i18n='about'>關於我們</button>
+    <button onclick="location.href='join.html'" data-i18n='join'>加入我們</button>
+    <button onclick="location.href='index.html'"><img src='assets/logo/anglelogo.png'>
+    </button>
+</div>
+<div class="menu">
+    <button id="toggleBtn">
+        <label for="fake"><img src='assets/menu.png'></label>
+    </button>
+    <button onclick="location.href='index.html'"><img src='assets/logo/anglelogo.png'></button>
+</div>
+<input type="checkbox" name="fake" id="fake">  
+<label for="fake" class="fakediv"><button></button></label>
+<div class="menu_list" id="sidemenu">
+    <label class="close" for="fake" id="close"><img src="assets/close2.png"></label>
+    <ul>
+        <li onclick="location.href='index.html'" data-i18n='home'>首頁</li>
+        <li onclick="location.href='product_and_service.html'" data-i18n='ps'>產品與服務</li>
+        <li onclick="location.href='solutions.html'" data-i18n='solutions'>解決方案</li>
+        <li onclick="location.href='about.html'" data-i18n='about'>關於我們</li>
+        <li onclick="location.href='join.html'" data-i18n='join'>加入我們</li> 
+    </ul>
+    <div class="lang_change">
+        <p data-i18n='lan'>語言</p>
+        <select class="language">
+            <option value="zh-cmn-Hant">繁體中文</option>
+            <option value="zh-cmn-Hans">简体中文</option>
+            <!-- <option value="en">English</option> -->
+        </select>
+    </div>
+</div>
+<script>
+$( document ).ready( function() {
+    // console.log($( ".language" ));
+    $( ".language" ).change(function() {
+        var language = $(this).val() ;
+        Cookies.set('lang', language); 
+        i18nChangeWith();
+        CTA();
+        Form()
+    });
+    function init(){
+        if(Cookies.get('lang')==null){ 
+            Cookies.set('lang', 'zh-cmn-Hant');  
+        }
+        $( ".language" ).val(Cookies.get('lang'));
+        $.i18n().load({ 
+            'zh-cmn-Hant': 'assets/i18n/zh-cmn-Hant.json',
+            'en': 'assets/i18n/en.json', 
+            "zh-cmn-Hans":'assets/i18n/zh-cmn-Hans.json'
+        }
+        ).done(function() {
+            i18nChangeWith();
+        });
+        CTA();
+        Form()
+    }
+
+    function i18nChangeWith(){
+        $.i18n().locale = Cookies.get('lang');
+        $( 'html body' ).i18n();
+    }
+    function CTA(){
+        if(Cookies.get('lang') == 'en'){
+        var cta = $('#i_cta_h1');
+        cta.attr('class', '')
+        cta.addClass('en');
+        }
+        if(Cookies.get('lang') == 'zh-cmn-Hant'){
+        var cta = $('#i_cta_h1');
+        cta.attr('class', '')
+        cta.addClass('zh-t');
+        }
+        if(Cookies.get('lang') == 'zh-cmn-Hans'){
+        var cta = $('#i_cta_h1');
+        cta.attr('class', '')
+        cta.addClass('zh-s');
+        }
+    }
+    function Form(){
+        var zhT = $('.zh-t');
+        var zhS = $('.zh-s');
+        var en = $('.en');
+        if(Cookies.get('lang') == 'zh-cmn-Hans'){
+            zhT.hide();
+            en.hide();
+            zhS.show();
+        }
+        if(Cookies.get('lang') == 'en'){
+            zhT.hide();
+            zhS.hide();
+            en.show();
+        }
+        if(Cookies.get('lang') == 'zh-cmn-Hant'){
+            en.hide();
+            zhS.hide();
+            zhT.show();
+        }
+    }
+
+    init();
+} );
+</script>
+<script>
+ var media_size = $(window).width(),
+    nav = $('.nav'),
+    menu = $('.menu'),
+    nav_lang = $('.nav select'),
+    menu = $('.menu'),
+    menu_list = $('.menu_list');
+
+    if(media_size <= 767){
+        nav.hide();
+        menu.show();
+        menu_list.show();
+    }else{
+        menu_list.hide();
+        nav.show();  
+        menu.hide();
+    }
+$(window).on('resize', function () {
+    var media_size = $(window).width(),
+        nav = $('.nav'),
+        menu = $('.menu'),
+        nav_lang = $('.nav select'),
+        menu = $('.menu'),
+        menu_list = $('.menu_list');
+
+        console.log(media_size);
+    if(media_size <= 767){
+        nav.hide();
+        menu.show();
+        menu_list.show();
+    }else{
+        menu_list.hide();
+        nav.show();  
+        menu.hide();
+       
+
+    }
+})
+</script>

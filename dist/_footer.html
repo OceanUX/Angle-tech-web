@@ -1,0 +1,40 @@
+<div class="footer">
+		<div class="link">
+				<button onclick="location.href='product_and_service.html'" data-i18n='ps'>產品與服務</button>
+				<button onclick="location.href='solutions.html'" data-i18n='solutions'>解決方案</button>
+				<button onclick="location.href='about.html'" data-i18n='about'>關於我們</button>
+				<button onclick="location.href='join.html'" data-i18n='join'>加入我們</button>		
+			<p>© 2018 copy right</p>
+		</div>
+		<div class="info">
+			<h4><img src="assets/logo/anglelogo.png">安果科技有限公司</h4>
+			<p><img src="assets/location.png">台中市文心南路576號</p>
+			<p><img src="assets/phone.png">(04)   2265-5686</p>
+		</div>
+</div>
+<script>
+	var media_size = $(window).width(),
+		link = $('.link'),
+		link_btn = $('.link button');
+   
+	   if(media_size <= 767){
+		   link.addClass('fakeheight');
+		   link_btn.addClass('out');
+	   }else{
+		   link.removeClass('fakeheight');  
+		   link_btn.removeClass('out');  
+	   }
+   $(window).on('resize', function () {
+		var media_size = $(window).width(),
+			link = $('.link'),
+			link_btn = $('.link button');
+		
+		if(media_size <= 767){
+			link.addClass('fakeheight');
+		   	link_btn.addClass('out');
+		}else{
+			link.removeClass('fakeheight');  
+		   	link_btn.removeClass('out');  
+		}
+   })
+</script>

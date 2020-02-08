@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base href="/home">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+	<link href='assets/logo/anglelogo.ico' rel='icon' type='image/x-icon'/>
+	<title>安果科技有限公司</title>
+	<script type="text/javascript" src="bundle.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.messagestore.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+	<div class="cta_box">
+		<div class="box">
+		</div>
+		<div id="header" class="bg"></div>
+		<div class="i_cta">
+			<h2 data-i18n='i_cta_h2'>你需要</h2>
+			<h1 id="i_cta_h1"></h1>	
+			<button class="moveon">
+				<p data-i18n='i_cta_click'>click</p>
+				<img src="assets/arrow.png" alt="">
+			</button>
+		</div>
+	</div>
+	<div class="i_about">
+		<div class="i_pic">
+			<img src="assets/bg/index_bg3.jpg">
+		</div>
+		<div class="i_content">
+			<h4 data-i18n='about'>關於我們</h4>
+			<p data-i18n='i_about_p'>是全通路營銷整合解決方案商，透過自主研發的移動門店管理APP和各電商平台接口的完整對接，及與企業內部供應鏈ERP系統的流程整合， 成為企業在移動互聯時代下新複合營銷體系建設的最佳助手</p>
+			<div class="i_btn"><button onclick="location.href='about.html'" data-i18n='i_about_more'>more...</button></div>
+		</div>
+	</div>
+	<div class="i_product">
+		<h2 data-i18n='ps'>產品與服務</h2>
+		<div class="hexagon">
+			<div class="outbox">
+				<div class="link">
+					<div class="p_box">
+						<div class="t_box">
+							<div class="trangle1"></div>
+						</div>
+						<div class="line"></div>
+					</div>
+					<div class="p_box">
+						<div class="line2"></div>
+						<div class="t_box2">
+							<div class="trangle1"></div>
+						</div>
+					</div>
+				</div>
+				<div class="link2">
+					<div class="p_box2">
+							<div class="t_box">
+								<div class="trangle1"></div>
+								<p data-i18n='product_p1'>主流電商接口</p>
+							</div>
+							<div class="line"></div>
+					</div>
+					<div class="p_box2">
+							<div class="line2"></div>
+							<div class="t_box2">
+								<div class="trangle1"></div>
+								<p data-i18n='product_p2'>移动门店管理APP</p>
+							</div>
+					</div>
+				</div>
+				<div class="link3">
+						<div class="p_box">
+							<div class="t_box">
+								<div class="trangle1"></div>
+							</div>
+							<div class="line"></div>
+						</div>
+						<div class="p_box">
+							<div class="line2"></div>
+							<div class="t_box2">
+								<div class="trangle1"></div>
+							</div>
+						</div>
+				</div>	
+			</div>
+			<div class="word">
+				<div class="p_title" data-i18n='product_p1'>主流電商接口</div>
+				<div class="p_title" data-i18n='product_p2'>移动门店管理APP</div>
+				<div class="p_title" data-i18n='product_p3'>ERP整合接口配置</div>
+				<div class="p_title" data-i18n='product_p4'>中台業務系統管理</div>
+			</div>
+			<div class="outbox2">
+					<div class="link">
+						<div class="p_box">
+							<div class="t_box">
+								<div class="trangle1"></div>
+							</div>
+							<div class="line"></div>
+						</div>
+						<div class="p_box">
+							<div class="line2"></div>
+							<div class="t_box2">
+								<div class="trangle1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="link2">
+						<div class="p_box2">
+							<div class="t_box">
+								<div class="trangle1"></div>
+								<p data-i18n='product_p3'>ERP整合接口配置</p>
+							</div>
+							<div class="line"></div>
+						</div>
+						<div class="p_box2">
+							<div class="line2"></div>
+							<div class="t_box2">
+								<div class="trangle1"></div>
+								<p data-i18n='product_p4'>中台業務系統管理</p>
+							</div>
+						</div>
+					</div>
+					<div class="link3">
+							<div class="p_box">
+								<div class="t_box">
+									<div class="trangle1"></div>
+								</div>
+								<div class="line"></div>
+							</div>
+							<div class="p_box">
+								<div class="line2"></div>
+								<div class="t_box2">
+									<div class="trangle1"></div>
+								</div>
+							</div>
+					</div>	
+			</div>
+			<div class="t_box_detail">
+				<div class="info_img">
+					<span class="close"><img src="assets/close.png"></span>
+					<img src="assets/product/product1.png">
+				</div>
+				<div class="info_img">
+						<span class="close"><img src="assets/close.png"></span>
+						<img src="assets/product/product2.png">
+				</div>
+				<div class="info_img">
+						<span class="close"><img src="assets/close.png"></span>
+						<img src="assets/product/product3.png">
+				</div>
+				<div class="info_img">
+						<span class="close"><img src="assets/close.png"></span>
+						<img src="assets/product/product4.png">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="i_client">
+		<h2 data-i18n='i_client_h2'>案例客戶</h2>
+		<div class="logo_box">
+			<div class="slider">
+				<ul class="sliderlist">
+						<li><img src="assets/logo/ns.png"></li>
+						<li><img src="assets/logo/sanneng.png"></li>
+						<li><img src="assets/logo/tenon.png"></li>
+						<li><img src="assets/logo/sunfloor.png"></li>
+						<li><img src="assets/logo/henda.png"></li>
+						<li><img src="assets/logo/beauty.png"></li>
+						<li><img src="assets/logo/jiusheng.png"></li>
+						<li><img src="assets/logo/yzw.png"></li>
+						<li><img src="assets/logo/sunon.png"></li>
+						<li><img src="assets/logo/ppdai.png"></li>
+						<li><img src="assets/logo/fcn.png"></li>
+						<li><img src="assets/logo/ston.png"></li>
+						<li><img src="assets/logo/cheersson.png"></li>
+				</ul>	
+			</div>
+			<div class="dotcontrol">
+			</div>
+		</div>
+		<button onclick="location.href='product_and_service.html'" data-i18n='i_client_more'>了解更多</button>
+	</div>
+	<div class="backtop"><button>^<br>top</button></div>
+	<div id="footer"></div>
+	
+</body>
+<script>
+	$("#header").load("_nav.html", function () {
+			// console.log("navbar.html OK.");
+	});
+	$("#footer").load("_footer.html", function () {
+			// console.log("footer.html OK.");
+	});
+</script>
+<script>
+	// 背景三角形生成＆旋轉＆移動
+	var i, ball, bx, by, cx, cy, size, deg,	
+		box = $('.box'),
+		container = $('.container'),
+		side = $('.side');
+
+	for(i=0; i<30; i++){
+
+		container = $('<div class="container"></div>');
+		side = $('<div class="side"></div>');
+		container.data("addNumberTop",2);
+		container.data("addNumberLeft",2);
+		
+		var a = i%4
+		if(a==0){
+            side.addClass('blue');   
+        }
+		
+		cx = Math.floor(Math.random()*100)-50;
+		cy = Math.floor(Math.random()*100)-50;
+		bx = Math.floor(Math.random()*1500);
+		by = Math.floor(Math.random()*800);
+		size = Math.random()*1.2;
+		deg = Math.floor(Math.random()*360);
+		
+		container.css({
+			'transform': 'scale(' + size + ') rotate(' + deg + 'deg)',
+			left: cx + 'vh',
+			top: cy + 'vh',
+		});
+		side.css({
+			left: bx,
+			top: by,
+		});
+		container.append(side);
+		box.append(container);
+	}
+
+	function getRotationDegrees(obj) {
+	var matrix = obj.css("-webkit-transform") ||
+	obj.css("-moz-transform")    ||
+	obj.css("-ms-transform")     ||
+	obj.css("-o-transform")      ||
+	obj.css("transform");
+	if(matrix !== 'none') {
+		var values = matrix.split('(')[1].split(')')[0].split(',');
+		var a = values[0];
+		var b = values[1];
+		var angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
+	} else { var angle = 0; }
+	return (angle < 0) ? angle + 360 : angle;
+	}
+
+	function getScale(obj) {
+		var matrix = obj.css("-webkit-transform") ||
+		obj.css("-moz-transform")    ||
+		obj.css("-ms-transform")     ||
+		obj.css("-o-transform")      ||
+		obj.css("transform");
+
+		
+		if(matrix!== 'none') {
+			var values = matrix.split('(')[1].split(')')[0].split(',');
+			var a = values[0];
+			var b = values[1];
+			var c = values[2];
+			var d = values[3];
+			var scale = Math.sqrt(a*a + b*b);
+
+		}
+		return scale;
+	}
+
+
+	var container = $('.container'),
+		side = $('.side');
+	var doRun = function() {
+	
+		side.each(function(){
+			var addNumberTop = $(this).data("addNumberTop");
+			var addNumberLeft = $(this).data("addNumberLeft");
+
+			var t = Number($(this).css('top').replace('px',''));
+			var l = Number($(this).css('left').replace('px',''));
+
+			// console.log("addNumberTop",addNumberTop);
+			// console.log($(this).css('top'));
+			// console.log("addNumberLeft",addNumberLeft);
+			// console.log("left",l);
+			if(t >= 300){
+				addNumberTop = -2
+			}else if(t<=-100){
+				addNumberTop = +2
+			}
+
+			if(l >= 700){
+				addNumberLeft = -2
+			}else if(l<=-50){
+				addNumberLeft = +2
+			}
+
+			$(this).data("addNumberTop",addNumberTop);
+			$(this).data("addNumberLeft",addNumberLeft);
+
+			t = t + addNumberTop;
+			l = l + addNumberLeft;
+			$(this).css('top', t + "px");
+			$(this).css('left', l + "px");
+
+
+			var r = getRotationDegrees($(this))
+			var s =getScale($(this))
+			if(r>360){
+				r= r-360;
+			}
+			$(this).css({
+				transform: 'rotate(' + (r+2) + 'deg)'
+			});
+			// console.log(r);
+			// console.log(s);
+
+		});
+		
+		setTimeout(doRun, 50);
+	};
+	doRun();
+</script>
+<script>
+	// 產品和服務介紹
+	var close = $('.close'),
+		btn = $('.link2'),
+		p_box =$('.p_box'),
+		p_box2= $('.p_box2'),
+		info_img=$('.info_img'),
+		info_detail= $('.t_box_detail'),
+		word = $('.word'),
+		p_title = $('.p_title'),
+		m = 0;
+	p_box2.on('click', function() {
+		m = $(p_box2).index(this);
+		word.css('opacity', 0);
+		btn.css('opacity', 0);
+		p_box.css({
+			transform: 'rotate(' + 460 + 'deg) translate('+ 8 + 'vw,'+ 4 + 'vw) skewY('+ 30 + 'deg)'
+		});
+		info_img.eq(m).delay(900).fadeIn(800);
+
+	});
+	p_title.on('click', function() {
+		m = $(p_title).index(this);
+		word.css('opacity', 0);
+		btn.css('opacity', 0);
+		p_box.css({
+			transform: 'rotate(' + 445 + 'deg) translate('+ 1 + 'vw,'+ 4 + 'vw) skewY('+ 50 + 'deg)'
+		});
+		info_img.eq(m).delay(900).fadeIn(800);
+
+	});
+	close.on('click', function() {
+		info_img.fadeOut(800);
+		p_box.css({
+			'padding-left': 0 + 'px'
+		});
+		p_box.css({
+			transform: 'rotate(' + 0 + 'deg)'
+		});
+		btn.css('opacity', 1);
+		word.css('opacity', 1);
+
+	});
+
+</script>
+<script>
+	var btn_moveon= $('.moveon');
+	btn_moveon.click(function(){
+		var top = $(window).height()
+		$('body,html').animate({scrollTop: top}, 1000);
+	});
+</script>
+<script>
+		var ii = 0,
+			li_length = $('.sliderlist li').length,
+			ul_width = $('.slider').width() * $('.sliderlist li').length,
+			control_dot ='',
+			img_width = $('.slider').width(); 
+	
+		$('.slider').width(ul_width);
+		console.log(li_length);
+		console.log(ul_width);
+		console.log(img_width);
+	
+	
+		for(i = 0; (i*5) < li_length; i++){
+			control_dot = control_dot + '<a href="#"></a>';
+		}
+		$('.dotcontrol').html(control_dot);
+	
+		$('.dotcontrol a').eq(ii).addClass('now');
+		gostep();
+		
+		$('.dotcontrol a').click(function(){
+			ii = $(this).index();
+			gostep();
+			return false;
+		})
+	
+		function gostep(){
+			$('.dotcontrol .now').removeClass('now');
+			$('.dotcontrol a').eq(ii).addClass('now');
+			$('.slider').css({left:(img_width*4)*ii*-1 + 'px'});
+		}
+	
+		var speed = 2000
+		var TT = setTimeout( AutoT , speed);
+		function AutoT(){
+			ii++;
+			if(ii >= (li_length/5)){
+				ii = 0;
+			}
+			gostep();
+			TT = setTimeout( AutoT , speed);
+		}
+	
+		$('.logo_box').hover(
+			function(){
+				clearTimeout(TT);
+				console.log('stop now');
+				
+			},
+			function(){
+				TT = setTimeout( AutoT , speed);
+				console.log('restart');
+			}
+		)
+	
+	
+</script>
+<script>
+	// back-to-top 按鈕
+	var btn_bt= $('.backtop');
+	var top = $(window).height()
+	$(window).on('scroll', function () {
+		var scrollTrigger = $(window).height(),
+			scrollTop = $(window).scrollTop();
+			// console.log(scrollTop);
+		if (scrollTop > scrollTrigger) {
+			btn_bt.fadeIn(500);
+		} else {
+			btn_bt.fadeOut(500);
+		}
+	});
+    btn_bt.click(function(){
+		$('body,html').animate({scrollTop: 0}, 1500);
+	});
+</script>
+</html>

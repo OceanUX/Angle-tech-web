@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+	<link href='assets/logo/anglelogo.ico' rel='icon' type='image/x-icon'/>
+	<title>安果科技有限公司</title>
+	<script type="text/javascript" src="bundle.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.messagestore.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js"></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="title">
+		<h1 data-i18n='solutions'>解決方案</h1>
+	</div>
+	<div class="solutions">
+		<div class="s_box">
+			<div class="s_way"><img src="assets/bg/solution_bg1.jpg"><p data-i18n='s_s1'>交易中心</p></div>
+			<div class="s_way"><img src="assets/bg/solution_bg2.jpg"><p data-i18n='s_s2'>行銷中心</p></div>
+			<div class="s_way"><img src="assets/bg/solution_bg3.jpg"><p data-i18n='s_s3'>會員中心</p></div>
+			<div class="s_way"><img src="assets/bg/solution_bg4.jpg"><p data-i18n='s_s4'>服務中心</p></div>
+			<div class="s_way"><img src="assets/bg/solution_bg5.jpg"><p data-i18n='s_s5'>數據中心</p></div>
+		</div>
+	</div>
+	<div class="s_show">
+		 <!-- Root element of PhotoSwipe. Must have class pswp. -->
+		<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+				<!-- Background of PhotoSwipe. 
+					 It's a separate element, as animating opacity is faster than rgba(). -->
+				<div class="pswp__bg"></div>
+			
+				<!-- Slides wrapper with overflow:hidden. -->
+				<div class="pswp__scroll-wrap">
+			
+					<!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+					<!-- don't modify these 3 pswp__item elements, data is added later on. -->
+					<div class="pswp__container">
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+						<div class="pswp__item"></div>
+					</div>
+			
+					<!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+					<div class="pswp__ui pswp__ui--hidden">
+			
+						<div class="pswp__top-bar">
+			
+							<!--  Controls are self-explanatory. Order can be changed. -->
+			
+							<div class="pswp__counter"></div>
+			
+							<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+			
+							<!-- <button class="pswp__button pswp__button--share" title="Share"></button> -->
+			
+							<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+			
+							<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+			
+							<!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+							<!-- element will get class pswp__preloader--active when preloader is running -->
+							<div class="pswp__preloader">
+								<div class="pswp__preloader__icn">
+								  <div class="pswp__preloader__cut">
+									<div class="pswp__preloader__donut"></div>
+								  </div>
+								</div>
+							</div>
+						</div>
+			
+						<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+							<div class="pswp__share-tooltip"></div> 
+						</div>
+			
+						<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+						</button>
+			
+						<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+						</button>
+			
+						<div class="pswp__caption">
+							<div class="pswp__caption__center"></div>
+						</div>
+			
+					  </div>
+			
+					</div>
+			
+		</div>
+		<div class="option">
+			<h2 data-i18n='s_s1'>交易中心</h2>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageObject">
+			  
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="assets/solutions/s_order1.png" itemprop="contentUrl" data-size="1024x768">
+						<img src="assets/solutions/s_order1.png" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description" data-i18n='s_option1_1'>訂單整合規則</figcaption>								
+				  </figure>
+			  
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="assets/solutions/s_order2.png" itemprop="contentUrl" data-size="1024x768">
+						<img src="assets/solutions/s_order2.png" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description" data-i18n='s_option1_2'>訂單分配規則</figcaption>
+				  </figure>
+			  
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="assets/solutions/s_order3.png" itemprop="contentUrl" data-size="1024x768">
+						<img src="assets/solutions/s_order3.png" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description" data-i18n='s_option1_3'>發貨規則及物流信息回寫</figcaption>
+				  </figure>
+			  
+				  <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="assets/solutions/s_order4.png" itemprop="contentUrl" data-size="1024x768">
+						<img src="assets/solutions/s_order4.png" itemprop="thumbnail" alt="Image description" />
+					</a>
+					<figcaption itemprop="caption description" data-i18n='s_option1_4'>退換貨相關規則及客訴處理</figcaption>
+				  </figure>
+			</div>
+		</div>
+		<div class="option">
+			<h2 data-i18n='s_s2'>行銷中心</h2>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+					<a href="assets/solutions/s_marketing1.png" itemprop="contentUrl" data-size="1024x768">
+						<img src="assets/solutions/s_marketing1.png" itemprop="thumbnail" alt="Image description" />
+					</a>
+				<figcaption itemprop="caption description" data-i18n='s_option2'>行銷自動化業務場景</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="option">
+			<h2 data-i18n='s_s3'>會員中心</h2>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_member1.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_member1.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option3'>客戶生命軌跡</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="option">
+			<h2 data-i18n='s_s4'>服務中心</h2>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_service1.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_service1.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option4_1'>服務流程神經中樞的交互中心</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_service2.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_service2.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option4_2'>端到端服務管理</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div class="option">
+			<h2 data-i18n='s_s5'>數據中心</h2>
+			<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+			
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_data1.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_data1.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option5_1'>商業大數據應用藍圖</figcaption>
+				</figure>
+
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_data2.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_data2.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option5_2'>商業大數據應用藍圖2</figcaption>
+				</figure>
+				<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+				<a href="assets/solutions/s_data3.png" itemprop="contentUrl" data-size="1024x768">
+					<img src="assets/solutions/s_data3.png" itemprop="thumbnail" alt="Image description" />
+				</a>
+				<figcaption itemprop="caption description" data-i18n='s_option5_3'>商業智能軟體架構與工具</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+	<div class="s_choose">
+		<h2 data-i18n='s_choose'>選擇我們</h2>
+		<ul>
+			<li data-i18n='s_choose_e1'>最豐富的電商接口整合，對接中國十多家電商平台，包含商品、訂單、支付、物流等接口；</li>
+			<li data-i18n='s_choose_e2'>最靈活的規則引擎，平台提供對各電商資料雙向同步後的拆和規則庫，以快速應對業務變化；</li>
+			<li data-i18n='s_choose_e3'>最彈性的ERP系統接口，提供互聯網及企業供應鏈的深度實時信息傳遞，借由配置方式快速整合ERP流程雙向響應；</li>
+			<li data-i18n='s_choose_e4'>最完善的中台建設，平台不僅提供互聯網與供應鏈的縱向整合，同時也提供豐富的數據分析模型，驗證全渠道營銷PDCA的最佳閉環</li>
+		</ul>
+		<a href="https://goo.gl/forms/nxhzVzT2es5pvQJ42" target="_blank"><button data-i18n='contact'>聯繫我們</button></a>
+	</div>
+	<div class="backtop"><button>^<br>top</button></div>
+	<div id="footer"></div>
+</body>
+<script>
+	$("#header").load("_nav.html", function () {
+			console.log("navbar.html OK.");
+	});
+	$("#footer").load("_footer.html", function () {
+		console.log("footer.html OK.");
+	});
+</script>
+<script>
+	var ii = 0;
+	// $('.solutions .s_box .way').eq(ii).addClass('now');
+	// $('.s_show .option').eq(ii).show();
+	$('.s_show').hide();
+	$('.solutions .s_box .s_way').click(function(){
+		var scrollTrigger = $('.s_way').height(),
+				scrollTop = $(window).scrollTop(),
+				width = $(window).width();
+		ii = $(this).index();
+		$('.s_show').show();
+
+		$('.solutions .s_box .now').removeClass('now');
+		$('.s_show .option').hide();
+
+		$('.solutions .s_box .way').eq(ii).addClass('now');
+
+		$('.s_show .option').eq(ii).show();
+		if(width>768){
+			$('body,html').animate({scrollTop: (scrollTrigger + 100)}, 1500);
+		}else{
+			$('body,html').animate({scrollTop: (scrollTrigger + 100)}, 1500);
+		}
+		
+	})
+	
+</script>
+<script>
+	var initPhotoSwipeFromDOM = function(gallerySelector) {
+
+// parse slide data (url, title, size ...) from DOM elements 
+// (children of gallerySelector)
+var parseThumbnailElements = function(el) {
+	var thumbElements = el.childNodes,
+		numNodes = thumbElements.length,
+		items = [],
+		figureEl,
+		linkEl,
+		size,
+		item;
+
+	for(var i = 0; i < numNodes; i++) {
+
+		figureEl = thumbElements[i]; // <figure> element
+
+		// include only element nodes 
+		if(figureEl.nodeType !== 1) {
+			continue;
+		}
+
+		linkEl = figureEl.children[0]; // <a> element
+
+		size = linkEl.getAttribute('data-size').split('x');
+
+		// create slide object
+		item = {
+			src: linkEl.getAttribute('href'),
+			w: parseInt(size[0], 10),
+			h: parseInt(size[1], 10)
+		};
+
+
+
+		if(figureEl.children.length > 1) {
+			// <figcaption> content
+			item.title = figureEl.children[1].innerHTML; 
+		}
+
+		if(linkEl.children.length > 0) {
+			// <img> thumbnail element, retrieving thumbnail url
+			item.msrc = linkEl.children[0].getAttribute('src');
+		} 
+
+		item.el = figureEl; // save link to element for getThumbBoundsFn
+		items.push(item);
+	}
+
+	return items;
+};
+
+// find nearest parent element
+var closest = function closest(el, fn) {
+	return el && ( fn(el) ? el : closest(el.parentNode, fn) );
+};
+
+// triggers when user clicks on thumbnail
+var onThumbnailsClick = function(e) {
+	e = e || window.event;
+	e.preventDefault ? e.preventDefault() : e.returnValue = false;
+
+	var eTarget = e.target || e.srcElement;
+
+	// find root element of slide
+	var clickedListItem = closest(eTarget, function(el) {
+		return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
+	});
+
+	if(!clickedListItem) {
+		return;
+	}
+
+	// find index of clicked item by looping through all child nodes
+	// alternatively, you may define index via data- attribute
+	var clickedGallery = clickedListItem.parentNode,
+		childNodes = clickedListItem.parentNode.childNodes,
+		numChildNodes = childNodes.length,
+		nodeIndex = 0,
+		index;
+
+	for (var i = 0; i < numChildNodes; i++) {
+		if(childNodes[i].nodeType !== 1) { 
+			continue; 
+		}
+
+		if(childNodes[i] === clickedListItem) {
+			index = nodeIndex;
+			break;
+		}
+		nodeIndex++;
+	}
+
+
+
+	if(index >= 0) {
+		// open PhotoSwipe if valid index found
+		openPhotoSwipe( index, clickedGallery );
+	}
+	return false;
+};
+
+// parse picture index and gallery index from URL (#&pid=1&gid=2)
+var photoswipeParseHash = function() {
+	var hash = window.location.hash.substring(1),
+	params = {};
+
+	if(hash.length < 5) {
+		return params;
+	}
+
+	var vars = hash.split('&');
+	for (var i = 0; i < vars.length; i++) {
+		if(!vars[i]) {
+			continue;
+		}
+		var pair = vars[i].split('=');  
+		if(pair.length < 2) {
+			continue;
+		}           
+		params[pair[0]] = pair[1];
+	}
+
+	if(params.gid) {
+		params.gid = parseInt(params.gid, 10);
+	}
+
+	return params;
+};
+
+var openPhotoSwipe = function(index, galleryElement, disableAnimation, fromURL) {
+	var pswpElement = document.querySelectorAll('.pswp')[0],
+		gallery,
+		options,
+		items;
+
+	items = parseThumbnailElements(galleryElement);
+
+	// define options (if needed)
+	options = {
+
+		// define gallery index (for URL)
+		galleryUID: galleryElement.getAttribute('data-pswp-uid'),
+
+		getThumbBoundsFn: function(index) {
+			// See Options -> getThumbBoundsFn section of documentation for more info
+			var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+				pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
+				rect = thumbnail.getBoundingClientRect(); 
+
+			return {x:rect.left, y:rect.top + pageYScroll, w:rect.width};
+		}
+
+	};
+
+	// PhotoSwipe opened from URL
+	if(fromURL) {
+		if(options.galleryPIDs) {
+			// parse real index when custom PIDs are used 
+			// http://photoswipe.com/documentation/faq.html#custom-pid-in-url
+			for(var j = 0; j < items.length; j++) {
+				if(items[j].pid == index) {
+					options.index = j;
+					break;
+				}
+			}
+		} else {
+			// in URL indexes start from 1
+			options.index = parseInt(index, 10) - 1;
+		}
+	} else {
+		options.index = parseInt(index, 10);
+	}
+
+	// exit if index not found
+	if( isNaN(options.index) ) {
+		return;
+	}
+
+	if(disableAnimation) {
+		options.showAnimationDuration = 0;
+	}
+
+	// Pass data to PhotoSwipe and initialize it
+	gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+};
+
+// loop through all gallery elements and bind events
+var galleryElements = document.querySelectorAll( gallerySelector );
+
+for(var i = 0, l = galleryElements.length; i < l; i++) {
+	galleryElements[i].setAttribute('data-pswp-uid', i+1);
+	galleryElements[i].onclick = onThumbnailsClick;
+}
+
+// Parse URL and open gallery if it contains #&pid=3&gid=1
+var hashData = photoswipeParseHash();
+if(hashData.pid && hashData.gid) {
+	openPhotoSwipe( hashData.pid ,  galleryElements[ hashData.gid - 1 ], true, true );
+}
+};
+
+// execute above function
+initPhotoSwipeFromDOM('.my-gallery');
+</script>
+<script>
+		// back-to-top 按鈕
+		var btn_bt= $('.backtop');
+		var top = $(window).height()
+		$(window).on('scroll', function () {
+			var scrollTrigger = $(window).height(),
+				scrollTop = $(window).scrollTop();
+				// console.log(scrollTop);
+			if (scrollTop > scrollTrigger) {
+				btn_bt.fadeIn(500);
+			} else {
+				btn_bt.fadeOut(500);
+			}
+		});
+		btn_bt.click(function(){
+			$('body,html').animate({scrollTop: 0}, 1500);
+		});
+	</script>
+</html>

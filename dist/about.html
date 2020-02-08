@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=0">
+	<link href='assets/logo/anglelogo.ico' rel='icon' type='image/x-icon'/>
+	<title>安果科技有限公司</title>
+	<script type="text/javascript" src="bundle.js"></script>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="assets/js/alert.css">
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=K98QfU1hxfp80Q5b3NBBPPyaqWbg0I0q"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.i18n/1.0.4/jquery.i18n.messagestore.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+	<script src='assets/js/alert.js'></script>
+</head>
+<body>
+	<div id="header"></div>
+	<div class="title">
+		<h1 data-i18n='about'>關於我們</h1>
+	</div>
+	<div class="a_slogan">
+		<div class="a_box">
+			<div class="paragraph">
+				<h1 data-i18n='a_slogan_h1'>全通路營銷整合解決方案商</h1>
+				<h2 data-i18n='a_slogan_h2_1'>成為企業在移動互聯時代下</h2>
+				<h2 data-i18n='a_slogan_h2_2'>新複合營銷體系建設最佳助手</h2>
+			</div>
+		</div>
+	</div>
+	<div class="a_advantage">
+			<h2 data-i18n='a_advantage_h2'>我們提供</h2>
+			<div class="offer">
+				<div class="o_project">
+					<div class="img"><img src="assets/about_offer/offer1.png"></div>
+					<h4 data-i18n='a_o_project1_1'>一體化</h4>
+					<h4 data-i18n='a_o_project1_2'>全通路行銷管理軟體</h4>
+				</div>
+				<div class="o_project">
+					<div class="img"><img src="assets/about_offer/offer2.png"></div>
+					<h4 data-i18n='a_o_project2_1'>全通路行銷</h4>
+					<h4 data-i18n='a_o_project2_2'>整體解決方案</h4>
+				</div>
+				<div class="o_project">
+					<div class="img"><img src="assets/about_offer/offer3.png"></div>
+					<h4 data-i18n='a_o_project3_1'>全通路行銷</h4>
+					<h4 data-i18n='a_o_project3_2'>專案實施</h4>
+				</div>
+				<div class="o_project">
+					<div class="img"><img src="assets/about_offer/offer4.png"></div>
+					<h4 data-i18n='a_o_project4_1'>全通路行銷與其他系統</h4>
+					<h4 data-i18n='a_o_project4_2'>整合實施</h4>
+				</div>
+			</div>
+			<button onclick="location.href='product_and_service.html'" data-i18n='a_o_more'>我想知道更多</button>
+	</div>
+	<div class="a_team">
+		<h2 data-i18n='a_team_h2'>我們的團隊</h2>
+		<p  class="a_team_p" data-i18n='a_team_p'>我們是一支深耕移動互聯時代下全渠道營銷整合平台的研發團隊，並提供企業更專業及專注的全渠道營銷咨詢服務及方案實施</p>
+		<div class="ourteam">
+			<div class="member">
+				<div class="img"><img src="assets/team/team7.png"></div>
+				<div class="word">
+					<p data-i18n='a_team_info1'>十年以上系統架構師，擅長互聯網平台設計、建設及開發，精通JAVA相關框架及技術</p>
+					<h4>- Kent Qiu</h4>
+				</div>
+			</div>
+			<div class="member">
+					<div class="img"><img src="assets/team/team3.png"></div>
+					<div class="word">
+						<p data-i18n='a_team_info2'>十年以上應用架構師，擅長企業信息化咨詢服務及業務流程分析，精通供應鏈系統及商業智能分析模型</p>
+						<h4>- Chrys Lee</h4>
+					</div>	
+			</div>
+			<div class="member">
+				<div class="img"><img src="assets/team/team2.png"></div>
+				<div class="word">
+					<p data-i18n='a_team_info3'>資深前端架構師，擅長各前端架構設計、建設及開發，精通前端各類型框架及JS相關技術</p>
+					<h4>- Troy Du</h4>
+				</div>	
+			</div>
+			<div class="member">
+					<div class="img"><img src="assets/team/team8.png"></div>
+					<div class="word">
+						<p data-i18n='a_team_info4'>資深系統分析師, 擅長擬訂程式規格及細步流程, 精通 JAVA 相關技術</p>
+						<h4>- Allen Deng</h4>
+					</div>	
+			</div>
+			<div class="member">
+					<div class="img"><img src="assets/team/team4.png"></div>
+					<div class="word">
+						<p data-i18n='a_team_info5'>UED設計師，擅長User Experience相關交互界面設計</p>
+						<h4>- Ocean Tsai</h4>
+					</div>	
+			</div>
+		</div>
+	</div>
+	<div class="a_contact">
+		<div class="map_box">
+			<span class="visit" data-i18n='a_visit'>拜訪我們</span>
+			<div class="map">
+				<div class="google">
+					<div id="map"></div>
+				</div>
+				<div class="baidu">
+					<div id="b_map"></div> 
+				</div>
+				<button class="office1" >
+					<p data-i18n='a_office1'>台中辦公室</p>
+					<div class="line"></div>
+				</button>	
+				<button class="office2">
+					<p data-i18n='a_office2'>上海辦公室</p>
+					<div class="line"></div>
+				</button>	
+				<div class="locate">
+					<div class="address">
+						<img src="assets/location.png">
+						<p data-i18n='office1_address'>台中市文心南路576號</p>
+					</div>
+					<div class="phone">
+						<img src="assets/phone.png">
+						<p>(04)  2265-5686</p>
+					</div>
+				</div>
+				<div class="locate">
+					<div class="address">
+						<img src="assets/location.png">
+						<p  data-i18n='office2_address'>上海市長寧區茅台路594號2樓</p>
+					</div>
+					<div class="phone">
+						<img src="assets/phone.png">
+						<p>1-021-60544864</p>
+					</div>
+				</div>
+			</div>
+			<div class="opinion_form">
+				<h2 data-i18n='contact'>聯絡我們</h2>
+				<p data-i18n='opinion_p'>有任何疑問，歡迎在下方留言，我們會盡快回覆</p>
+				<form class="message zh-t" action="https://script.google.com/macros/s/AKfycbzcpaf9MuxiFK8ZRBHJUjAZKo_6TZ7XBlu8Eogm5KEPxwKau8I0/exec" method="post" target="text">
+					<input type="hidden" name="method" value="write" />
+					<input type="text" name="name" placeholder="填寫姓名" title="姓名">
+					<input type="email" name="email" placeholder="填寫E-mail" title="聯絡方式">
+					<textarea name="opinion" id="" cols="30" rows="10" placeholder="寫下你的疑問吧！"></textarea>
+					<input type="submit" value="提交" class="submit btn_zht alert-btn1">
+				</form>
+				<iframe name="text"></iframe>
+				<form class="message zh-s" action="https://script.google.com/macros/s/AKfycbzcpaf9MuxiFK8ZRBHJUjAZKo_6TZ7XBlu8Eogm5KEPxwKau8I0/exec" method="post" target="text">
+					<input type="hidden" name="method" value="write" />
+					<input type="text" name="name" placeholder="填写姓名" title="姓名">
+					<input type="email" name="email" placeholder="填写E-mail" title="联络方式">
+					<textarea name="opinion" id="" cols="30" rows="10" placeholder="写下你的疑问吧！"></textarea>
+					<input type="submit" value="提交" class="submit btn_zhs alert-btn1">
+				</form>
+				<form class="message en" action="https://script.google.com/macros/s/AKfycbzcpaf9MuxiFK8ZRBHJUjAZKo_6TZ7XBlu8Eogm5KEPxwKau8I0/exec" method="post" target="text">
+					<input type="hidden" name="method" value="write" />
+					<input type="text" name="name" placeholder="Name" title="姓名">
+					<input type="email" name="email" placeholder="E-mail" title="联络方式">
+					<textarea name="opinion" id="" cols="30" rows="10" placeholder="Please leave your message!"></textarea>
+					<input type="submit" value="submit" class="submit btn_en alert-btn1">
+				</form>
+			</div>
+		</div>				
+	</div>
+	<div class="backtop"><button>^<br>top</button></div>
+	<div id="footer"></div>
+</body>
+</script>
+<script>
+		$("#header").load("_nav.html", function () {
+				console.log("navbar.html OK.");
+		});
+		$("#footer").load("_footer.html", function () {
+			console.log("footer.html OK.");
+		});
+</script>
+<script>
+	function initMap() {
+		var styledMapType = new google.maps.StyledMapType(
+				[
+				{
+					"featureType": "administrative",
+					"elementType": "all",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"gamma": "1.00"
+						}
+					]
+				},
+				{
+					"featureType": "administrative.locality",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"color": "#ba5858"
+						}
+					]
+				},
+				{
+					"featureType": "administrative.neighborhood",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						},
+						// {
+						// 	"color": "#BF2461"
+						// }
+					]
+				},
+				{
+					"featureType": "landscape",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"lightness": "65"
+						},
+						{
+							"saturation": "-100"
+						},
+						{
+							"hue": "#ff0000"
+						}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"saturation": "-100"
+						},
+						{
+							"lightness": "80"
+						}
+					]
+				},
+				{
+					"featureType": "poi",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "poi.attraction",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"color": "#dddddd"
+						}
+					]
+				},
+				{
+					"featureType": "road.highway",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "road.highway.controlled_access",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "off"
+						}
+					]
+				},
+				{
+					"featureType": "road.arterial",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"color": "#dddddd"
+						}
+					]
+				},
+				{
+					"featureType": "road.arterial",
+					"elementType": "labels",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						}
+					]
+				},
+				{
+					"featureType": "road.local",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"color": "#eedddd"
+						}
+					]
+				},
+				{
+					"featureType": "road.local",
+					"elementType": "labels.text.fill",
+					"stylers": [
+						{
+							"color": "#ba5858"
+						},
+						{
+							"saturation": "-100"
+						}
+					]
+				},
+				{
+					"featureType": "transit.station",
+					"elementType": "all",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						}
+					]
+				},
+				{
+					"featureType": "transit.station",
+					"elementType": "labels.text.fill",
+					"stylers": [
+						{
+							"color": "#309AD0"
+						},
+						{
+							"visibility": "simplified"
+						}
+					]
+				},
+				{
+					"featureType": "transit.station",
+					"elementType": "labels.icon",
+					"stylers": [
+						{
+							"hue": "#2C6E90"
+						}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [
+						{
+							"visibility": "simplified"
+						},
+						{
+							"color": "#dddddd"
+						}
+					]
+				},
+				{
+					"featureType": "water",
+					"elementType": "labels.text.fill",
+					"stylers": [
+						{
+							"color": "#ba5858"
+						}
+					]
+				}
+			],
+				{name: 'Styled Map'});
+
+			// Create a map object, and include the MapTypeId to add
+			// to the map type control.
+		var map = new google.maps.Map(document.getElementById('map'), {
+			center: {lat: 24.1193699,lng: 120.6498293},
+			zoom: 16,
+			mapTypeControlOptions: {
+				mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain',
+						'styled_map']
+			}
+			});
+
+			//Associate the styled map with the MapTypeId and set it to display.
+			map.mapTypes.set('styled_map', styledMapType);
+			map.setMapTypeId('styled_map');
+
+		var marker = new google.maps.Marker({
+				map: map,
+				draggable: true,
+				animation: google.maps.Animation.BOUNCE,
+				position: {lat: 24.1185137 ,lng: 120.6523319},
+				icon: 'assets/logo/anglelogoMap.png',
+				title:"angle",
+				});
+			marker.addListener('click', toggleBounce);
+
+			function toggleBounce() {
+			var infowindow = new google.maps.InfoWindow;
+			infowindow.setContent('安果科技有限公司 ');
+			infowindow.open(map, marker);
+			}
+	}
+</script>
+<script>
+		var map = new BMap.Map("b_map");
+		// 创建地图实例  
+		var point = new BMap.Point(121.392031,31.220792);
+		var point2 = new BMap.Point(121.393096,31.21927);
+		var point3 = new BMap.Point(121.389566,31.219957);
+		var point4 = new BMap.Point(121.392036,31.218081);
+		var point5 = new BMap.Point(121.392036,31.218081);
+
+		var media_size = $(window).width();
+
+		if(960 <=media_size <= 1199){
+			map.centerAndZoom(point2, 17);
+		}
+		if(768 <= media_size <= 959){
+			map.centerAndZoom(point3, 17);
+		}
+		if(0 <= media_size <= 767){
+			map.centerAndZoom(point4, 17);
+		}
+		map.enableAutoResize();
+		// 创建点坐标  
+		var opts = {type: BMAP_NAVIGATION_CONTROL_SMALL}    
+		map.addControl(new BMap.NavigationControl(opts));
+		// 初始化地图，设置中心点坐标和地图级别  
+		map.enableScrollWheelZoom(true); 
+		var myStyleJson=[
+          {
+                    "featureType": "all",
+                    "elementType": "all",
+                    "stylers": {
+                              "lightness": 10,
+                              "saturation": -100
+                    }
+          },
+          {
+                    "featureType": "arterial",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "hue": "#dddddd"
+                    }
+          },
+          {
+                    "featureType": "land",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "lightness": 65,
+                              "saturation": 0
+                    }
+          },
+          {
+                    "featureType": "poilabel",
+                    "elementType": "labels",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "highway",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "hue": "#dddddd"
+                    }
+          },
+          {
+                    "featureType": "local",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "hue": "#eedddd"
+                    }
+          },
+          {
+                    "featureType": "local",
+                    "elementType": "labels.text.fill",
+                    "stylers": {
+                              "hue": "#ba5858",
+                              "saturation": 100
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "labels.text.fill",
+                    "stylers": {
+                              "hue": "#309ad0",
+                              "saturation": 100
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "labels.icon",
+                    "stylers": {
+                              "hue": "#2c6e90",
+                              "saturation": 100
+                    }
+          },
+          {
+                    "featureType": "subway",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "hue": "#309ad0",
+                              "saturation": 41
+                    }
+          },
+          {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": {
+                              "hue": "#dddddd"
+                    }
+          },
+          {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": {
+                              "hue": "#ba5858",
+                              "saturation": 33
+                    }
+          },
+          {
+                    "featureType": "arterial",
+                    "elementType": "all",
+                    "stylers": {
+                              "hue": "#ba5858",
+                              "saturation": 100
+                    }
+          }
+		];
+		map.setMapStyle({styleJson: myStyleJson });
+
+		var icon = new BMap.Icon("assets/logo/anglelogoMap.png", new BMap.Size(100,100));
+		var point1 = new BMap.Point(121.396048,31.21591);   
+		var marker = new BMap.Marker(point1,{icon:icon});  
+		map.addOverlay(marker);               // 将标注添加到地图中
+		marker.setAnimation(BMAP_ANIMATION_BOUNCE); //跳动的动画
+		var opts = {
+			width : 200,     // 信息窗口宽度
+			height: 50,     // 信息窗口高度
+			// title : "上海邦企信息科技有限公司" , // 信息窗口标题
+		}
+		var infoWindow = new BMap.InfoWindow("上海市長寧區茅台路594號2樓", opts);  // 创建信息窗口对象 
+		marker.addEventListener("click", function(){       
+			map.openInfoWindow(infoWindow,point1); //开启信息窗口
+		});    // 打开信息窗口
+	
+</script> 
+<script>
+	// 拜訪我們字段顯示
+	var media_size = $(window).width();
+	var p_visit = $('.visit');
+
+	if(media_size <= 959){
+		p_visit.show();
+	}else{
+		p_visit.hide();
+
+	}
+	$(window).on('resize', function () {
+		var media_size = $(window).width();
+		var p_visit = $('.visit');
+
+		if(media_size <= 959){
+			p_visit.show();
+		}else{
+			p_visit.hide();
+
+		}
+	})
+</script> 
+<script>
+	// back-to-top 按鈕
+	var btn_bt= $('.backtop');
+	var top = $(window).height()
+	$(window).on('scroll', function () {
+		var scrollTrigger = $(window).height(),
+			scrollTop = $(window).scrollTop();
+			// console.log(scrollTop);
+		if (scrollTop > scrollTrigger) {
+			btn_bt.fadeIn(500);
+		} else {
+			btn_bt.fadeOut(500);
+		}
+	});
+	btn_bt.click(function(){
+		$('body,html').animate({scrollTop: 0}, 1500);
+	});
+</script>
+<script>
+	// 切換地圖
+	var office1 = $('.office1'); 
+	var office2 = $('.office2'); 
+	var t = $('.google'),
+		s = $('.baidu'),
+		t_info = $('.locate').eq(0);
+		s_info = $('.locate').eq(1);
+		
+		t.show();
+		t_info.show();
+		s.hide();
+		s_info.hide();
+
+	office1.click(function(){
+		$(this).children('.line').css({'opacity':1});
+		office2.children('.line').css({'opacity':0});
+		t.show();
+		t_info.show();
+		s.hide();
+		s_info.hide();
+	});
+	office2.click(function(){
+		$(this).children('.line').css({'opacity':1});
+		office1.children('.line').css({'opacity':0});
+		t.hide();
+		t_info.hide();
+		s.show();
+		s_info.show();
+	});
+
+</script>
+<script>
+	// form表單提交後的alert
+	var submit= $('.submit');
+	var dialog1 ;
+	submit.click(function(){
+		if(dialog1)dialog1.destroy();
+		if(Cookies.get('lang') == 'zh-cmn-Hant'){
+			name = $(".zh-t input[name='name']").val();
+			email = $(".zh-t input[name='email']").val();
+		}
+		if(Cookies.get('lang') == 'en'){
+			name = $(".en input[name='name']").val();
+			email = $(".en input[name='email']").val();	
+		}
+		if(Cookies.get('lang') == 'zh-cmn-Hans'){
+			name = $(".zh-s input[name='name']").val();
+			email = $(".zh-s input[name='email']").val();	
+		}
+		var errorMsg="";
+		var icon=''
+		var reg = email.match(/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+((\.[a-zA-Z0-9_-]{2,3}){1,2})$/);
+		if(name !== '' && name !== undefined && name !== null && email !== '' && email !== undefined && email !== null && reg){
+			errorMsg = $.i18n( 'form_sucess' );
+			icon = 'assets/sucess.png'
+		}else {
+			if((name == '' || name == undefined || name == null) && (email == '' || email == undefined || email == null)){
+				errorMsg = $.i18n( 'form_n_e' );
+				icon = 'assets/warning.png'
+			}else if(email == '' || email == undefined || email == null || !reg){
+				errorMsg = $.i18n( 'form_e' );
+				icon = 'assets/warning.png'
+			}else if(reg && (name == '' || name == undefined || name == null)){
+				errorMsg = $.i18n( 'form_n' );
+				icon = 'assets/warning.png'
+			}
+		}
+		dialog1 = jqueryAlert({
+			'content' : errorMsg,
+			'icon'    : icon,
+			'closeTime' : 1500,
+		})
+		dialog1.show();
+	});
+
+</script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA00xv-9mf9N51JUnm_GG7R_6DYWlFEuYc&callback=initMap">
+</script>	
+</html>
+
